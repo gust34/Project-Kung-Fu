@@ -1,0 +1,54 @@
+/*Criando e Usando DB*/
+CREATE DATABASE KungFu;
+
+#DROP DATABASE KungFu;
+
+USE KungFu;
+
+
+/*Criando tabelas*/
+CREATE TABLE Usuario(
+CodUser INT PRIMARY KEY AUTO_INCREMENT,
+Nome VARCHAR(60) NOT NULL,
+Endereco VARCHAR(120) NOT NULL,
+Descricao VARCHAR(480) NOT NULL,
+Tipo INT NOT NULL,
+ArteMarcial VARCHAR(240) NOT NULL,
+PontuaçãoTotal DOUBLE NOT NULL);
+
+CREATE TABLE Escola(
+CodEsc INT PRIMARY KEY AUTO_INCREMENT,
+Nome VARCHAR(60) NOT NULL,
+Endereco VARCHAR(120) NOT NULL,
+Descicao VARCHAR(480) NOT NULL,
+ArtesMarciais VARCHAR(240) NOT NULL);
+
+CREATE TABLE Competicao(
+CodComp INT PRIMARY KEY AUTO_INCREMENT,
+Nome VARCHAR(60) NOT NULL,
+Inicio CHAR(10) NOT NULL,
+Fim CHAR(10) NOT NULL);
+
+CREATE TABLE UserXComp(
+CodUser INT,
+CodComp INT,
+PRIMARY KEY(CodUser,CodComp),
+FOREIGN KEY (CodUser) REFERENCES Usuario(CodUser),
+FOREIGN KEY (CodComp) REFERENCES Competicao(CodComp),
+PontuacaoUC DOUBLE NOT NULL);
+
+CREATE TABLE UserXEsc(
+CodUser INT,
+CodEsc INT,
+PRIMARY KEY(CodUser,CodEsc),
+FOREIGN KEY (CodUser) REFERENCES Usuario(CodUser),
+FOREIGN KEY (CodEsc) REFERENCES Escola(CodEsc),
+PontuacaoUE DOUBLE NOT NULL);
+
+CREATE TABLE EscXComp(
+CodEsc INT,
+CodComp INT,
+PRIMARY KEY(CodEsc,CodComp),
+FOREIGN KEY (CodEsc) REFERENCES Escola(CodEsc),
+FOREIGN KEY (CodComp) REFERENCES Competicao(CodComp),
+PontuacaoEC DOUBLE NOT NULL);
