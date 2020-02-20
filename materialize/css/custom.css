@@ -7,11 +7,14 @@
     background-size: cover;
     overflow: none;
 }
-.corpo{
-    overflow: hidden;
+
+.corpo
+{
+    background-image: url(../../img/parallax5.jpg);
+    background-size: cover;
 }
 
-@media only screen and (max-device-width: 500px) 
+/*@media only screen and (max-device-width: 500px) 
 {
 .parallax-container2
     {
@@ -35,4 +38,21 @@
         background-size: cover;
         background-image: url(../../img/parallax14.jpg);
     }
+}*/
+.main
+{
+    width: 200px;
+    height: 500px;
+    background-color: white;
+    border-radius: 3px;
+    opacity: 0.9;
+    position: relative;
+    top: 90px;
+    left: 0px;
+}
+.btnset
+{
+    position: relative;
+    top: 100px;
+    left: 0px;
 }
