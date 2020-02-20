@@ -1,0 +1,33 @@
+.config
+{
+    background: url(../../img/parallax4.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgb(255, 255, 255);
+    background-size: 100% 70%;
+}
+.posranking
+{ 
+   position: relative;
+   top: 350px;
+   right: 0px;
+}
+
+.titlerank
+{
+    background-color: rgb(198, 40, 40);
+    width: 949px;
+    height: 70px;   
+    position: relative;
+    top: 0px;
+    right: -237px; 
+    
+}
+.h4
+{
+    font-style: italic;
+    position: relative;
+    top: 19px;
+    color: rgb(255, 255, 255);
+}
