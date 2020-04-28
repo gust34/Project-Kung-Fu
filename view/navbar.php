@@ -22,7 +22,7 @@
                 <nav class="red darken-3 z-depth-1">
 
                     <div class="nav-wrapper container">
-                    <a href="home.php" class="brand-logo left"> <img class="responsive-img" src="">Logo</a>
+                    <a href="home.php" class="brand-logo left"> <img class="responsive-img logo" src="../img/Logo3.png"></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down ">
                         <li><a href="home.php">Home</a></li>
                         <li><a href="ranking.php">Ranking</a></li>                        

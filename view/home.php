@@ -12,11 +12,12 @@
     <link type="text/css" rel="stylesheet" href="../materialize/css/custom2.css"  media="screen,projection"/>
     <!--Importando Ícones do Google-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/Logo3.ico" type="image/x-icon" />
 
     <title>Home</title>
 
 </head>
-<body class="corpo">
+<body class="config">
 
     <!--NavBar/Cabeçalho-->
     <header>
@@ -25,7 +26,7 @@
                 <nav class="red darken-3 z-depth-1">
 
                     <div class="nav-wrapper container">
-                    <a href="home.php" class="brand-logo left"> <img class="responsive-img" src="../img/yin3.ico"></a>
+                    <a href="home.php" class="brand-logo left"> <img class="responsive-img logo" src="../img/Logo3.png"></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down ">
                         <li><a href="home.php">Home</a></li>
                         <li><a href="ranking.php">Ranking</a></li>                        
@@ -44,12 +45,12 @@
 
         <main>
 
-        <div class="carousel carousel-slider">
+        <!--<div class="carousel carousel-slider">
     <a class="carousel-item" href="#one!"><img src="../img/parallax1.jpg"></a>
     <a class="carousel-item" href="#two!"><img src="../img/parallax2.jpg"></a>
     <a class="carousel-item" href="#three!"><img src="../img/parallax3.jpg"></a>
     <a class="carousel-item" href="#four!"><img src="../img/parallax4.jpg"></a>
-  </div>
+  </div>-->
 
 
     <!--Modal de Login--> 

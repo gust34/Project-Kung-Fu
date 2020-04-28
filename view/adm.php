@@ -11,9 +11,10 @@
     <link type="text/css" rel="stylesheet" href="../materialize/css/custom2.css"  media="screen,projection"/>
     <!--Importando Ícones do Google-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/Logo3.ico" type="image/x-icon" />
     <title>Área Restrita</title>
 </head>
-<body class="corpo">
+<body class="config">
 
 <!--NavBar/Cabeçalho-->
 <header>
@@ -22,7 +23,7 @@
                 <nav class="red darken-3 z-depth-1">
 
                     <div class="nav-wrapper container">
-                    <a href="home.php" class="brand-logo left"> <img class="responsive-img" src="../img/yin3.ico"></a>
+                    <a href="home.php" class="brand-logo left"> <img class="responsive-img logo" src="../img/Logo3.png"></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down ">
                         <li><a href="home.php">Home</a></li>
                         <li><a href="ranking.php">Ranking</a></li>                        
@@ -38,29 +39,24 @@
 <!--NavBar/Cabeçalho-->
 
         <main>
+        
 
         <!--Botões lado esquerdo-->
-        <!--1--><div class="main">
-            
-        <!--2--> <div class="btnset">
-        <center>
-        <!--3--><div class="row">
-        <div class="col s12"><a href="#modalatleta" class="waves-effect waves-light btn-large modal-trigger red darken-3 z-depth-1"><i class="material-icons left">person_add</i>Atleta</a></div>
-        <!--3--> </div>
-        <br><br>
-       
-        <!--4--><div class="row">
-        <div class="col s12"><a href="#modalevento" class="waves-effect waves-light btn-large modal-trigger red darken-3 z-depth-1"><i class="material-icons left">place</i>Evento</a></div>
-        <!--4--> </div>
-        <br><br>
-
-        <!--5--><div class="row">
-        <div class="col s12"><a href="#modalacademia"class="waves-effect waves-light btn-large modal-trigger red darken-3 z-depth-1"><i class="material-icons left">apartment</i>Academia</a></div>
-        <!--5--> </div>
-        </center>
-        <!--2--> </div>
-       
-        <!--1--></div>
+        <div class="row">
+            <div class="main col s3 m3">
+                <div class="card grey lighten-3">
+                    <div class="card-content center">
+                        <span class="card-title">Administração</span>
+                        <p>Escola uma das opções a seguir</p>
+                    </div>
+                    <div class="card-action btnset">
+                        <div class="row"><a href="#modalatleta" class="col s10 waves-effect waves-light btn-large modal-trigger red darken-3 z-depth-1"><i class="material-icons left">person_add</i>Atleta</a></div>
+                        <div class="row"><a href="#modalevento" class="col s10 waves-effect waves-light btn-large modal-trigger red darken-3 z-depth-1"><i class="material-icons left">place</i>Evento</a></div>
+                        <div class="row"><a href="#modalacademia"class="col s10 waves-effect waves-light btn-large modal-trigger red darken-3 z-depth-1"><i class="material-icons left">apartment</i>Academia</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!--Botões lado esquerdo-->
 
         <!--Modal para atleta-->

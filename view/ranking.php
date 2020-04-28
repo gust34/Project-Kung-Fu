@@ -10,6 +10,7 @@
     <link type="text/css" rel="stylesheet" href="../materialize/css/custom2.css"  media="screen,projection"/>
     <!--Importando Ícones do Google-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/Logo3.ico" type="image/x-icon" />
     
     <title>Ranking</title>
 </head>
@@ -22,7 +23,7 @@
                 <nav class="red darken-3 z-depth-1">
 
                     <div class="nav-wrapper container">
-                    <a href="home.php" class="brand-logo left"> <img class="responsive-img" src="../img/yin3.ico"></a>
+                    <a href="home.php" class="brand-logo left"><img class="responsive-img logo" src="../img/Logo3.png"></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down ">
                         <li><a href="home.php">Home</a></li>
                         <li><a href="ranking.php">Ranking</a></li>                        
@@ -42,14 +43,13 @@
     <!--Ranking título-->
             <!--Pai--><div class="posranking">
                             <!--1--><div class="titlerank"> 
-                                   <h4 class="h4"><center> Ranking Geral <center></h4>
+                                   <h4 class="h4 center"> Ranking Geral </h4>
                                 <!--1--></div>
 
-
                         <!--2--><div class="row"> 
-                                <!--3--> <div class="col s8 offset-s2 grey lighten-1 z-depth-3">
-                                            <table class="centered striped">
-                                                <thead>
+                                <!--3--> <div class="col s8 offset-s2 grey lighten-3 z-depth-3">
+                                            <table class="centered highlight">
+                                                <thead class="red-text text-darken-3">
                                                 <tr>
                                                     <th>Nome</th>
                                                     <th>Escola</th>
@@ -102,6 +102,6 @@
                                             </table>
                                     <!--2--></div>
                                 <!--1--></div>
-            <!--Pai--></div>
+                      <!--Pai--></div>
 </body>
 </html>

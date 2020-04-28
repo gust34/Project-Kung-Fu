@@ -12,6 +12,7 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Importando Js das validações de campos em branco-->
     <script src="../controller/ValidarLogin.js"></script>
+    <link rel="shortcut icon" href="../img/Logo3.ico" type="image/x-icon" />
     
     <title>Index</title>
 
@@ -23,7 +24,7 @@
         <!--2--><nav class="yellow darken-3">
             <!--3--><div class="nav-wrapper container">
 
-                <a href ="home.php" class="brand-logo left"> <img class="responsive-img" src="../img/yin2.ico"></a>
+                <a href ="home.php" class="brand-logo left"> <img class="responsive-img logo" src="../img/Logo3.png"></a>
 
                 <ul class="show-on-large right">
                     <li><a href="home.php" class="waves-effect waves-light btn red darken-2">Entrar</a></li> 

@@ -11,10 +11,11 @@
     <link type="text/css" rel="stylesheet" href="../materialize/css/custom2.css"  media="screen,projection"/>
     <!--Importando Ícones do Google-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/Logo3.ico" type="image/x-icon" />
 
     <title>Notícias</title>
 </head>
-<body>
+<body class="config">
 
     <!--NavBar/Cabeçalho-->
     <header>
@@ -23,7 +24,7 @@
                 <nav class="red darken-3 z-depth-1">
 
                     <div class="nav-wrapper container">
-                    <a href="home.php" class="brand-logo left"> <img class="responsive-img" src="../img/yin3.ico"></a>
+                    <a href="home.php" class="brand-logo left"> <img class="responsive-img logo" src="../img/Logo3.png"></a>
                     <ul id="nav-mobile" class="right hide-on-med-and-down ">
                         <li><a href="home.php">Home</a></li>
                         <li><a href="ranking.php">Ranking</a></li>                        
@@ -36,9 +37,9 @@
                 </nav>
             </div>
         </header>
-<!--NavBar/Cabeçalho-->
-
-<div class="carousel carousel-slider center">
+        <br><br>
+        <div class="row">
+  <div class="col s10 mt10 offset-s1 carousel carousel-slider center">
     <div class="carousel-fixed-item center">
       <a class="btn waves-effect white grey-text darken-text-2">Saiba Mais</a>
     </div>
@@ -62,6 +63,7 @@ O registro mais confiável que existe já é de mais de 2 mil anos depois, em 1.
       <p class="white-text">Uma das principais filosofias que envolve o Kung Fu, e que tem tudo a ver com a cultura chinesa, é a busca pela harmonia entre as coisas. Por isso, muitos utilizam o símbolo “yin e yang” para representar essa arte marcial. É a busca pelo equilíbrio perfeito que faz com que os atletas trabalhem não só o corpo, mas também a mente.</p>
     </div>
   </div>
+</div>
   
         <script type="text/javascript" src="../materialize/js/jquery-1.12.1.min.js"></script>
         <script type="text/javascript" src="../materialize/js/materialize.min.js"></script>
