@@ -39,6 +39,11 @@
         background-image: url(../../img/parallax14.jpg);
     }
 }*/
+.logo
+{
+    width: 12%;
+    height: 12%;
+}
 .main
 {
     width: 200px;

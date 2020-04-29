@@ -39,34 +39,28 @@
 <!--NavBar/Cabeçalho-->
 
         <main>
-        
-
-        <!--Botões lado esquerdo-->
-        <div class="row">
-            <div class="main col s3 m3">
-                <div class="card grey lighten-3">
-                    <div class="card-content center">
-                        <span class="card-title">Administração</span>
-                        <p>Escola uma das opções a seguir</p>
-                    </div>
-                    <div class="card-action btnset">
-                        <div class="row"><a href="#modalatleta" class="col s10 waves-effect waves-light btn-large modal-trigger red darken-3 z-depth-1"><i class="material-icons left">person_add</i>Atleta</a></div>
-                        <div class="row"><a href="#modalevento" class="col s10 waves-effect waves-light btn-large modal-trigger red darken-3 z-depth-1"><i class="material-icons left">place</i>Evento</a></div>
-                        <div class="row"><a href="#modalacademia"class="col s10 waves-effect waves-light btn-large modal-trigger red darken-3 z-depth-1"><i class="material-icons left">apartment</i>Academia</a></div>
-                    </div>
+            <div class="row mt-2">
+                <div class="col s12">
+                    <ul id="#" class="tabs white-text red darken-3 z-depth-1">
+                        <li class="tab col s4"><a class="active white-text" href="#tabatleta">Atleta</a></li>
+                        <li class="tab col s4"><a class="white-text" href="#tabevento">Evento</a></li>
+                        <li class="tab col s4"><a class="white-text" href="#tabacademia">Academia</a></li>  
+                    </ul>
                 </div>
-            </div>
-        </div>
-        <!--Botões lado esquerdo-->
 
-        <!--Modal para atleta-->
+        <!--Tab para atleta-->
         
-            <!--1--><div id="modalatleta" class="modal modal-fixed-footer">
-            <!--2--><div class="modal-content">
-                <center>
-            <h5><strong> Cadastro de Atleta </strong></h5>
-            <h6> Insira os dados para cadastrar um atleta: </h6>  
-             </center>
+            <!--1--><div id="tabatleta" class="container">
+            <div class="row center-align mt-2">
+                <div class="col s12 m12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <span class="card-title"> 
+                                    <h5 class="admtitle"><strong> Cadastro de Atleta </strong></h5>
+                                    <h6> Insira os dados para cadastrar um atleta: </h6>
+                                </span> 
+                            </div> 
 
             <form name="" method="post" action="">
             <!--3--><div class="row">
@@ -75,25 +69,110 @@
                             <!--5--><div class="input-field col s12 m8 offset-m2">
                             <input id="name" type="text" name="nome" class="validate" required> <!--Campo Nome-->
                             <label for="name"> Nome </label>
-                            <span class="helper-text" data-error="Insira seu nome" data-success=""></span>
+                            <span class="helper-text" data-error="Insira o nome" data-success=""></span>
                             <!--5--></div>
                      <!--4--></div>
 
-                      <!--4.2--><div class="col s12 m12">
-                            <!--5.2--><div class="input-field col s12 m8 offset-m2">
-                            <input id="nascimento" type="text" name="nascimento" class="validate" required> <!--Campo Nascimento-->
-                            <label for="nascimento"> Nascimento </label>
-                            <span class="helper-text" data-error="Insira o nascimento" data-success=""></span>
-                            <!--5.2--></div>
-                     <!--4.2--></div>
+                     <!--4--><div class="col s12 m12">
+                            <!--5--><div class="input-field col s12 m8 offset-m2">
+                            <input id="nasc" type="text" name="nasc" class="validate" required> <!--Campo Nascimento-->
+                            <label for="nasc"> Data de Nascimento </label>
+                            <span class="helper-text" data-error="Insira a data de nascimento" data-success=""></span>
+                            <!--5--></div>
+                     <!--4--></div>
 
-                      <!--4.3--><div class="col s12 m12">
-                            <!--5.3--><div class="input-field col s12 m8 offset-m2">
-                            <input id="sexo" type="text" name="sexo" class="validate" required> <!--Campo Sexo-->
-                            <label for="sexo"> Sexo </label>
-                            <span class="helper-text" data-error="Insira o sexo" data-success=""></span>
-                            <!--5.3--></div>
-                     <!--4.3--></div>
+                     <!--4--><div class="col s12 m12">
+                                <div class="input-field col s12 m8 offset-m2">
+                                    <select id="sexo" name="sexo" required>
+                                        <optgroup label="Selecione:">            
+                                            <option value="Masculino">Masculino</option>
+                                            <option value="Feminino">Feminino</option>
+                                            <option value="Outro">Prefiro não identificar</option>
+                                        </optgroup>     
+                                    </select>  
+                                    <label>Sexo</label>                            
+                                </div>
+                     <!--4--></div>
+
+                     <!--4--><div class="col s12 m12">
+                            <!--5--><div class="input-field col s12 m8 offset-m2">
+                            <input id="peso" type="text" name="peso" class="validate" required> <!--Campo Peso-->
+                            <label for="peso"> Peso </label>
+                            <span class="helper-text" data-error="Insira o peso" data-success=""></span>
+                            <!--5--></div>
+                     <!--4--></div>
+
+                     <!--4--><div class="col s12 m12">
+                            <!--5--><div class="input-field col s12 m8 offset-m2">
+                            <input id="artem" type="text" name="artem" class="validate" required> <!--Campo Arte Marcial-->
+                            <label for="artem"> Arte Marcial </label>
+                            <span class="helper-text" data-error="Insira a arte marcial" data-success=""></span>
+                            <!--5--></div>
+                     <!--4--></div>
+
+                     <!--4--><div class="col s12 m12">
+                            <!--5--><div class="input-field col s12 m8 offset-m2">
+                            <input id="categoria" type="text" name="categoria" class="validate" required> <!--Campo Categoria-->
+                            <label for="categoria"> Categoria </label>
+                            <span class="helper-text" data-error="Insira a categoria" data-success=""></span>
+                            <!--5--></div>
+                     <!--4--></div>
+
+                      <!--4--><div class="col s12 m12">
+                            <!--5--><div class="input-field col s12 m8 offset-m2">
+                            <input id="faixa" type="text" name="faixa" class="validate" required> <!--Campo Faixa-->
+                            <label for="faixa"> Faixa </label>
+                            <span class="helper-text" data-error="Insira a faixa" data-success=""></span>
+                            <!--5--></div>
+                     <!--4--></div>
+
+                      <!--4--><div class="col s12 m12">
+                            <!--5--><div class="input-field col s12 m8 offset-m2">
+                            <input id="email" type="email" name="email" class="validate" required> <!--Campo Email-->
+                            <label for="email"> Email </label>
+                            <span class="helper-text" data-error="Insira o email" data-success=""></span>
+                            <!--5--></div>
+                     <!--4--></div>
+
+                     <!--4--><div class="col s12 m12">
+                            <!--5--><div class="input-field col s12 m8 offset-m2">
+                            <input id="rua" type="text" name="rua" class="validate" required> <!--Campo Rua-->
+                            <label for="rua"> Rua </label>
+                            <span class="helper-text" data-error="Insira a rua" data-success=""></span>
+                            <!--5--></div>
+                     <!--4--></div>
+
+                     <!--4--><div class="col s12 m12">
+                            <!--5--><div class="input-field col s12 m8 offset-m2">
+                            <input id="n" type="text" name="n" class="validate" required> <!--Campo Número-->
+                            <label for="n"> Número </label>
+                            <span class="helper-text" data-error="Insira o número do endereço" data-success=""></span>
+                            <!--5--></div>
+                     <!--4--></div>
+
+                      <!--4--><div class="col s12 m12">
+                            <!--5--><div class="input-field col s12 m8 offset-m2">
+                            <input id="bairro" type="text" name="bairro" class="validate" required> <!--Campo Bairro-->
+                            <label for="bairro"> Bairro </label>
+                            <span class="helper-text" data-error="Insira o bairro" data-success=""></span>
+                            <!--5--></div>
+                     <!--4--></div>
+
+                      <!--4--><div class="col s12 m12">
+                            <!--5--><div class="input-field col s12 m8 offset-m2">
+                            <input id="cidade" type="text" name="cidade" class="validate" required> <!--Campo Cidade-->
+                            <label for="cidade"> Cidade </label>
+                            <span class="helper-text" data-error="Insira a cidade" data-success=""></span>
+                            <!--5--></div>
+                     <!--4--></div>
+
+                     <!--4--><div class="col s12 m12">
+                            <!--5--><div class="input-field col s12 m8 offset-m2">
+                            <input id="estado" type="text" name="estado" class="validate" required> <!--Campo Estado-->
+                            <label for="estado"> Estado </label>
+                            <span class="helper-text" data-error="Insira a estado" data-success=""></span>
+                            <!--5--></div>
+                     <!--4--></div>
 
                                     <!--6--><div class="col s12 m12">
                                         <!--7--><div class="input-field col s12 m12 center-align">
@@ -102,22 +181,27 @@
                                 <!--6--></div> 
                             </form>   
             <!--3--></div>
-            <!--2--></div>
-            <!--8--><div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
-            <!--8--></div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
             <!--1--></div>
         
-        <!--Modal para atleta-->
+        <!--/Tab para atleta-->
 
-        <!--Modal para evento-->
+        <!--Tab para evento-->
         
-            <!--1--><div id="modalevento" class="modal modal-fixed-footer">
-            <!--2--><div class="modal-content">
-            <center>
-            <h5><strong> Cadastro de Evento </strong></h5>
-            <h6> Insira os dados para cadastrar um evento: </h6>  
-            </center>
+            <!--1--><div id="tabevento" class="container">
+            <div class="row center-align mt-2">
+                <div class="col s12 m12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <span class="card-title"> 
+                                    <h5><strong> Cadastro de Evento </strong></h5>
+                                    <h6> Insira os dados para cadastrar um evento: </h6>
+                                </span>
+                            </div>  
 
             <form name="" method="post" action="">
             <!--3--><div class="row">
@@ -153,22 +237,27 @@
                                 <!--6--></div> 
                             </form>   
             <!--3--></div>
-            <!--2--></div>
-            <!--8--><div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
-            <!--8--></div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
             <!--1--></div>
         
-        <!--Modal para evento-->
+        <!--/Tab para evento-->
 
-        <!--Modal para academia-->
+        <!--Tab para academia-->
         
-            <!--1--><div id="modalacademia" class="modal modal-fixed-footer">
-            <!--2--><div class="modal-content">
-            <center>
-            <h5><strong> Cadastro de Academia</strong></h5>
-            <h6> Insira os dados para cadastrar uma academia: </h6>  
-            </center>
+            <!--1--><div id="tabacademia" class="container">
+            <div class="row center-align mt-2">
+                <div class="col s12 m12">
+                    <div class="card">
+                        <div class="card-content">
+                            <div class="card-title">
+                                <span class="card-title"> 
+                                    <h5><strong> Cadastro de Academia</strong></h5>
+                                    <h6> Insira os dados para cadastrar uma academia: </h6>  
+                                </span>
+                            </div>
 
             <form name="" method="post" action="">
             <!--3--><div class="row">
@@ -204,13 +293,13 @@
                                 <!--6--></div> 
                             </form>   
             <!--3--></div>
-            <!--2--></div>
-            <!--8--><div class="modal-footer">
-            <a href="#!" class="modal-close waves-effect waves-green btn-flat">Cancelar</a>
-            <!--8--></div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
             <!--1--></div>
         
-        <!--Modal para academia-->
+        <!--/Tab para academia-->
 
         </main>
         
@@ -220,7 +309,7 @@
 
     <script>
             $(document).ready(function(){
-              $('.modal').modal();
+            $('.tabs').tabs();
             });
     </script>
 

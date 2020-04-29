@@ -42,3 +42,9 @@
     top: 19px;
     color: rgb(255, 255, 255);
 }
+
+.admtab
+{
+    top: 3%;
+    position: relative;
+}
